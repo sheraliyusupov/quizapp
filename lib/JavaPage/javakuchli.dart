@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class JavaKuchliPage extends StatefulWidget {
@@ -25,6 +27,8 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
       body: Container(
         padding: const EdgeInsets.only(top: 10, left: 20, right: 20),
         child: GridView(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
           children: [
             Container(
               decoration: BoxDecoration(
@@ -34,14 +38,26 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
               alignment: Alignment.center,
               child: Column(
                 children: [
-                  Text(
-                    "Test 1",
-                    style: TextStyle(
-                        fontSize: 23,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Test 1",
+                        style: TextStyle(
+                            fontSize: 23,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
-                  ElevatedButton(onPressed: null, child: Text("Bosish"))
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton(onPressed: null, child: Text("Bosish")),
+                    ],
+                  )
                 ],
               ),
             ),
@@ -107,7 +123,7 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                 color: Colors.white,
               ),
               alignment: Alignment.center,
-              child: const Text(
+              child: Text(
                 "Test 6",
                 style: TextStyle(
                     fontSize: 23,
@@ -116,8 +132,6 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
               ),
             ),
           ],
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
         ),
       ),
     );
