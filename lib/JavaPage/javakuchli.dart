@@ -32,12 +32,17 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                 color: Colors.white,
               ),
               alignment: Alignment.center,
-              child: Text(
-                "Test 1",
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+              child: Column(
+                children: [
+                  Text(
+                    "Test 1",
+                    style: TextStyle(
+                        fontSize: 23,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  ElevatedButton(onPressed: null, child: Text("Bosish"))
+                ],
               ),
             ),
             Container(
