@@ -31,13 +31,31 @@ class _KuchliPageState extends State<KuchliPage> {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              alignment: Alignment.center,
-              child: Text(
-                "Test 1",
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+              child: Stack(
+                children: [
+                  Center(
+                    child: Text(
+                      "Test 1",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 50,
+                    right: 50,
+                    bottom: 0,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurpleAccent.shade700,
+                      ),
+                      onPressed: () {},
+                      child: Text("Boshlash"),
+                    ),
+                  )
+                ],
               ),
             ),
             Container(
@@ -45,13 +63,31 @@ class _KuchliPageState extends State<KuchliPage> {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              alignment: Alignment.center,
-              child: const Text(
-                "Test 2",
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+              child: Stack(
+                children: [
+                  Center(
+                    child: Text(
+                      "Test 2",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 50,
+                    right: 50,
+                    bottom: 0,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurpleAccent.shade700,
+                      ),
+                      onPressed: () {},
+                      child: Text("Boshlash"),
+                    ),
+                  )
+                ],
               ),
             ),
             Container(

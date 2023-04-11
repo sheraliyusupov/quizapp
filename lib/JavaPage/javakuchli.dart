@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
 
@@ -35,28 +35,54 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              alignment: Alignment.center,
-              child: Column(
+              child: Stack(children: [
+                const Center(
+                    child: Text(
+                  "Test 1",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 23,
+                      fontWeight: FontWeight.bold),
+                )),
+                Positioned(
+                    left: 50,
+                    right: 50,
+                    bottom: 0,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepPurpleAccent.shade700,
+                        ),
+                        onPressed: () {},
+                        child: const Text("Boshlash")))
+              ]),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.white,
+              ),
+              child: Stack(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Test 1",
-                        style: TextStyle(
-                            fontSize: 23,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
+                  Center(
+                    child: Text(
+                      "Test 2",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ElevatedButton(onPressed: null, child: Text("Bosish")),
-                    ],
+                  Positioned(
+                    left: 50,
+                    right: 50,
+                    bottom: 0,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurpleAccent.shade700,
+                      ),
+                      onPressed: () {},
+                      child: Text("Boshlash"),
+                    ),
                   )
                 ],
               ),
@@ -66,13 +92,31 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              alignment: Alignment.center,
-              child: const Text(
-                "Test 2",
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+              child: Stack(
+                children: [
+                  Center(
+                    child: Text(
+                      "Test 3",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 50,
+                    right: 50,
+                    bottom: 0,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurpleAccent.shade700,
+                      ),
+                      onPressed: () {},
+                      child: Text("Boshlash"),
+                    ),
+                  )
+                ],
               ),
             ),
             Container(
@@ -80,13 +124,31 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              alignment: Alignment.center,
-              child: const Text(
-                "Test 3",
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+              child: Stack(
+                children: [
+                  Center(
+                    child: Text(
+                      "Test 4",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 50,
+                    right: 50,
+                    bottom: 0,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurpleAccent.shade700,
+                      ),
+                      onPressed: () {},
+                      child: Text("Boshlash"),
+                    ),
+                  )
+                ],
               ),
             ),
             Container(
@@ -94,13 +156,31 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              alignment: Alignment.center,
-              child: const Text(
-                "Test 4",
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+              child: Stack(
+                children: [
+                  Center(
+                    child: Text(
+                      "Test 5",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 50,
+                    right: 50,
+                    bottom: 0,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurpleAccent.shade700,
+                      ),
+                      onPressed: () {},
+                      child: Text("Boshlash"),
+                    ),
+                  )
+                ],
               ),
             ),
             Container(
@@ -108,27 +188,31 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              alignment: Alignment.center,
-              child: const Text(
-                "Test 5",
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.white,
-              ),
-              alignment: Alignment.center,
-              child: Text(
-                "Test 6",
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+              child: Stack(
+                children: [
+                  Center(
+                    child: Text(
+                      "Test 6",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 50,
+                    right: 50,
+                    bottom: 0,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurpleAccent.shade700,
+                      ),
+                      onPressed: () {},
+                      child: Text("Boshlash"),
+                    ),
+                  )
+                ],
               ),
             ),
           ],

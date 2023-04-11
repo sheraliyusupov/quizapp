@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 166, 203, 220),
+      backgroundColor: const Color.fromARGB(255, 166, 203, 220),
       appBar: AppBar(
         backgroundColor: Colors.deepPurpleAccent.shade700,
         title: Text(
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       drawer: Drawer(
-        backgroundColor: Color.fromARGB(255, 225, 240, 247),
+        backgroundColor: const Color.fromARGB(255, 166, 203, 220),
         child: ListView(
           padding: EdgeInsets.only(top: 0),
           children: [
