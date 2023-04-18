@@ -45,9 +45,8 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                       fontWeight: FontWeight.bold),
                 )),
                 Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
+                    left: 12,
+                    bottom: 6,
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Colors.deepPurpleAccent.shade700,
@@ -73,9 +72,8 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                     ),
                   ),
                   Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
+                    left: 12,
+                    bottom: 6,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         primary: Colors.deepPurpleAccent.shade700,
@@ -105,9 +103,8 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                     ),
                   ),
                   Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
+                    left: 12,
+                    bottom: 6,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         primary: Colors.deepPurpleAccent.shade700,
@@ -137,9 +134,8 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                     ),
                   ),
                   Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
+                    left: 12,
+                    bottom: 6,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         primary: Colors.deepPurpleAccent.shade700,
@@ -169,9 +165,8 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                     ),
                   ),
                   Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
+                    left: 12,
+                    bottom: 6,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         primary: Colors.deepPurpleAccent.shade700,
@@ -201,9 +196,8 @@ class _JavaKuchliPageState extends State<JavaKuchliPage> {
                     ),
                   ),
                   Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
+                    left: 12,
+                    bottom: 6,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         primary: Colors.deepPurpleAccent.shade700,

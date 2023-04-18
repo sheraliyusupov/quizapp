@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 class JavaBoshlangichPage extends StatefulWidget {
@@ -25,195 +27,210 @@ class _JavaBoshlangichPageState extends State<JavaBoshlangichPage> {
       body: Container(
         padding: const EdgeInsets.only(top: 10, left: 20, right: 20),
         child: GridView(
+          // ignore: sort_child_properties_last
           children: [
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              child: Stack(
-                children: [
-                  Center(
-                    child: Text(
-                      "Test 1",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 23,
-                        fontWeight: FontWeight.bold,
+              child: InkWell(
+                onTap: () {},
+                child: Stack(
+                  children: [
+                    Center(
+                      child: Text(
+                        "Test 1",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                  ),
-                  Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.deepPurpleAccent.shade700,
+                    Positioned(
+                      left: 12,
+                      bottom: 6,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepPurpleAccent.shade700,
+                        ),
+                        onPressed: () {},
+                        child: Text("Boshlash"),
                       ),
-                      onPressed: () {},
-                      child: Text("Boshlash"),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.white,
-              ),
-              child: Stack(
-                children: [
-                  Center(
-                    child: Text(
-                      "Test 2",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 23,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.deepPurpleAccent.shade700,
-                      ),
-                      onPressed: () {},
-                      child: Text("Boshlash"),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.white,
-              ),
-              child: Stack(
-                children: [
-                  Center(
-                    child: Text(
-                      "Test 3",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 23,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.deepPurpleAccent.shade700,
-                      ),
-                      onPressed: () {},
-                      child: Text("Boshlash"),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.white,
-              ),
-              child: Stack(
-                children: [
-                  Center(
-                    child: Text(
-                      "Test 4",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 23,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.deepPurpleAccent.shade700,
-                      ),
-                      onPressed: () {},
-                      child: Text("Boshlash"),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.white,
-              ),
-              child: Stack(
-                children: [
-                  Center(
-                    child: Text(
-                      "Test 5",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 23,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 50,
-                    right: 50,
-                    bottom: 0,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.deepPurpleAccent.shade700,
-                      ),
-                      onPressed: () {},
-                      child: Text("Boshlash"),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.white,
-              ),
-              child: Stack(
-               children: [
-                Center(
-                  child: Text("Test 6",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
-                  ),),
+                    )
+                  ],
                 ),
-                Positioned(
-                  left: 50,
-                  right: 50,
-                  bottom: 0,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.deepPurpleAccent.shade700,
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: Stack(
+                  children: [
+                    Center(
+                      child: Text(
+                        "Test 2",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
-                    onPressed: (){},
-                    child: Text("Boshlash"),
-                  ),
-                )
-               ],
+                    Positioned(
+                      left: 12,
+                      bottom: 6,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepPurpleAccent.shade700,
+                        ),
+                        onPressed: () {},
+                        child: Text("Boshlash"),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: Stack(
+                  children: [
+                    Center(
+                      child: Text(
+                        "Test 3",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 12,
+                      bottom: 6,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepPurpleAccent.shade700,
+                        ),
+                        onPressed: () {},
+                        child: Text("Boshlash"),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: Stack(
+                  children: [
+                    Center(
+                      child: Text(
+                        "Test 4",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 12,
+                      bottom: 6,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepPurpleAccent.shade700,
+                        ),
+                        onPressed: () {},
+                        child: Text("Boshlash"),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: Stack(
+                  children: [
+                    Center(
+                      child: Text(
+                        "Test 5",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 12,
+                      bottom: 6,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepPurpleAccent.shade700,
+                        ),
+                        onPressed: () {},
+                        child: Text("Boshlash"),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: Stack(
+                  children: [
+                    Center(
+                      child: Text(
+                        "Test 6",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 12,
+                      bottom: 6,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepPurpleAccent.shade700,
+                        ),
+                        onPressed: () {},
+                        child: Text("Boshlash"),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ],

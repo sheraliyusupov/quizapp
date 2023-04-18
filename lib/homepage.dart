@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:quizapp/Cpage/cpage.dart';
 import 'package:quizapp/JavaPage/javapage.dart';
 import 'package:quizapp/JavaScriptPage/javascript.dart';
@@ -60,8 +61,11 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.deepPurpleAccent.shade700,
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => PythonPage()));
+                  Navigator.of(context).push(PageTransition(
+                      child: PythonPage(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
               title: TextButton(
@@ -74,8 +78,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => PythonPage()));
+                  Navigator.of(context).push(PageTransition(
+                      child: PythonPage(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
             ),
@@ -87,8 +94,11 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.deepPurpleAccent.shade700,
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => JavaPage()));
+                  Navigator.of(context).push(PageTransition(
+                      child: JavaPage(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
               title: TextButton(
@@ -101,8 +111,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => JavaPage()));
+                  Navigator.of(context).push(PageTransition(
+                      child: JavaPage(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
             ),
@@ -114,8 +127,11 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.deepPurpleAccent.shade700,
                 ),
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => CPage()));
+                  Navigator.of(context).push(PageTransition(
+                      child: CPage(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
               title: TextButton(
@@ -127,8 +143,11 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.bold),
                 ),
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => CPage()));
+                  Navigator.of(context).push(PageTransition(
+                      child: CPage(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
             ),
@@ -140,8 +159,11 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.deepPurpleAccent.shade700,
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => JavaScriptPAge()));
+                  Navigator.of(context).push(PageTransition(
+                      child: JavaScriptPAge(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
               title: TextButton(
@@ -154,8 +176,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => JavaScriptPAge()));
+                  Navigator.of(context).push(PageTransition(
+                      child: JavaScriptPAge(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
             ),
@@ -167,8 +192,11 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.deepPurpleAccent.shade700,
                 ),
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => PhpPage()));
+                  Navigator.of(context).push(PageTransition(
+                      child: PhpPage(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
               title: TextButton(
@@ -181,8 +209,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => PhpPage()));
+                  Navigator.of(context).push(PageTransition(
+                      child: PhpPage(),
+                      type: PageTransitionType.rightToLeft,
+                      childCurrent: HomePage(),
+                      curve: Curves.linear));
                 },
               ),
             )
@@ -253,8 +284,11 @@ class _HomePageState extends State<HomePage> {
                         primary: Colors.deepPurpleAccent.shade700,
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => PythonPage()));
+                        Navigator.of(context).push(PageTransition(
+                            child: PythonPage(),
+                            type: PageTransitionType.fade,
+                            childCurrent: HomePage(),
+                            curve: Curves.linear));
                       },
                       child: const Text("Boshlash"),
                     ),
@@ -330,8 +364,11 @@ class _HomePageState extends State<HomePage> {
                         primary: Colors.deepPurpleAccent.shade700,
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => JavaPage()));
+                        Navigator.of(context).push(PageTransition(
+                            child: JavaPage(),
+                            type: PageTransitionType.fade,
+                            childCurrent: HomePage(),
+                            curve: Curves.linear));
                       },
                       child: const Text("Boshlash"),
                     ),
@@ -405,8 +442,11 @@ class _HomePageState extends State<HomePage> {
                         primary: Colors.deepPurpleAccent.shade700,
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => CPage()));
+                        Navigator.of(context).push(PageTransition(
+                            child: CPage(),
+                            type: PageTransitionType.fade,
+                            childCurrent: HomePage(),
+                            curve: Curves.linear));
                       },
                       child: const Text("Boshlash"),
                     ),
@@ -477,8 +517,11 @@ class _HomePageState extends State<HomePage> {
                         primary: Colors.deepPurpleAccent.shade700,
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => JavaScriptPAge()));
+                        Navigator.of(context).push(PageTransition(
+                            child: JavaScriptPAge(),
+                            type: PageTransitionType.fade,
+                            childCurrent: HomePage(),
+                            curve: Curves.linear));
                       },
                       child: const Text("Boshlash"),
                     ),
@@ -544,7 +587,11 @@ class _HomePageState extends State<HomePage> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => PhpPage()));
+                            PageTransition(
+                            child: PhpPage(),
+                            type: PageTransitionType.fade,
+                            childCurrent: HomePage(),
+                            curve: Curves.linear));
                       },
                       child: const Text("Boshlash"),
                     ),
