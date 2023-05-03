@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:quizapp/JavaScriptPage/jsboshlangich.dart';
-import 'package:quizapp/JavaScriptPage/jskuchli.dart';
-import 'package:quizapp/JavaScriptPage/jsorta.dart';
-import 'package:quizapp/JavaScriptPage/jspro.dart';
+import 'package:quizapp/JavaScriptPage/After%20Homepage/jsboshlangich.dart';
+import 'package:quizapp/JavaScriptPage/After%20Homepage/jskuchli.dart';
+import 'package:quizapp/JavaScriptPage/After%20Homepage/jsorta.dart';
+import 'package:quizapp/JavaScriptPage/After%20Homepage/jspro.dart';
 
 class JavaScriptPAge extends StatefulWidget {
   const JavaScriptPAge({super.key});

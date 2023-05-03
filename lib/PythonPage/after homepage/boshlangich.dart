@@ -36,30 +36,33 @@ class _BoshlangichPageState extends State<BoshlangichPage> {
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.white,
                 ),
-                child: Stack(
-                  children: [
-                    Center(
-                      child: Text(
-                        "Test 1",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 23,
-                          fontWeight: FontWeight.bold,
+                child: InkWell(
+                  onTap: () {},
+                  child: Stack(
+                    children: [
+                      Center(
+                        child: Text(
+                          "Test 1",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 23,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
-                    ),
-                    Positioned(
-                      left: 12,
-                      bottom: 6,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.deepPurpleAccent.shade700,
+                      Positioned(
+                        left: 12,
+                        bottom: 6,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.deepPurpleAccent.shade700,
+                          ),
+                          onPressed: () {},
+                          child: Text("Boshlash"),
                         ),
-                        onPressed: () {},
-                        child: Text("Boshlash"),
-                      ),
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
               ),
               InkWell(

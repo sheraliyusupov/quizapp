@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:quizapp/PythonPage/boshlangich.dart';
-import 'package:quizapp/PythonPage/kuchli.dart';
-import 'package:quizapp/PythonPage/orta.dart';
-import 'package:quizapp/PythonPage/propage.dart';
+import 'package:quizapp/PythonPage/after%20homepage/boshlangich.dart';
+import 'package:quizapp/PythonPage/after%20homepage/kuchli.dart';
+import 'package:quizapp/PythonPage/after%20homepage/orta.dart';
+import 'package:quizapp/PythonPage/after%20homepage/propage.dart';
 
 class PythonPage extends StatefulWidget {
   const PythonPage({super.key});
